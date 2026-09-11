@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .display {
+            display: flex;
+        }
+        
+        .disappear {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btnDis">Disappear</button>
+    <button id="btnShow">Show</button>
+    <span id="display"><img src="5788c846f513754d2c02.jpg" alt=""></span>
+
+    <script>
+        var btnDis = document.getElementById("btnDis")
+        var btnShow = document.getElementById("btnShow")
+        var display = document.getElementById("display")
+
+        btnDis.onclick = () => {
+            console.log("click")
+            display.classList.remove("display");
+            display.classList.add("disappear");
+        }
+
+        btnShow.onclick = () => {
+            console.log("show")
+            display.classList.remove("disappear");
+            display.classList.add("display");
+        }
+    </script>
+</body>
+
+</html>
